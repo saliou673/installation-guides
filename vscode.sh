@@ -16,3 +16,7 @@ code --install-extension zhangpanchina.typescript-snippets
 
 #HTML TAG Highliter
 code --install-extension vincaslt.highlight-matching-tag
+
+
+#ASCII DOC
+code --install-extension asciidoctor.asciidoctor-vscode
