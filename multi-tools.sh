@@ -62,6 +62,6 @@ sudo snap install mysql-workbench-community
 sudo snap install postman --classic
 
 #====================================================================
-#=================== VLC (Video Lan Media Player) =====================
+#============================ VS CODE ===============================
 #====================================================================
-sudo apt install vlc
+sudo snap install code --classic --edge
