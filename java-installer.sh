@@ -15,7 +15,8 @@ priority=1
 default_path=""
 for decompressed_jdk in `ls $install_dir`
 do
-	default_path="${install_dir}/${decompressed_jdk}/bin"
+	default_path_base="${install_dir}/${decompressed_jdk}"
+	default_path="${default_path_base}/bin"
 	java="${default_path}/java"
 	javac="${default_path}/javac"
 	jar="${default_path}/jar"
@@ -27,7 +28,7 @@ do
 	sudo update-alternatives --install /usr/bin/jshell jshell $jshell $priority
 	priority=$((priority+1))
 done
-java_home="JAVA_HOME=\"${default_path}\""
+java_home="JAVA_HOME=\"${default_path_base}\""
 sudo echo  $java_home >> /etc/environment
 
 # Notice when you change current java version with update-alternative, you
