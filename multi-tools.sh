@@ -2,7 +2,7 @@
 #==================== Node JS Installation ==========================
 #====================================================================
 ## Adding the NodeSource APT repository for Debian-based distributions repository AND the PGP key for verifying packages
-sudo curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 
 sudo apt-get install -y nodejs
 
@@ -18,6 +18,8 @@ sudo apt install -y apache2
 #====================================================================
 #====================Php 7.3 installation ===========================
 #====================================================================
+# Add php PPA
+sudo LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 sudo apt install -y php7.3 php7.3-cli php7.3-common
 
 #====================================================================
