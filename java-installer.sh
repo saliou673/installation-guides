@@ -30,6 +30,6 @@ do
 done
 java_home="JAVA_HOME=\"${default_path_base}\""
 sudo echo  $java_home >> /etc/environment
-
+sudo source /etc/environment
 # Notice when you change current java version with update-alternative, you
 # need to change JAVA_HOME Path manually by opening /etc/environment file.
