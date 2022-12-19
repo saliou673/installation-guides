@@ -3,10 +3,9 @@
 
 install_dir="/opt"
 current_dir=`pwd`
-maven_version="apache-maven-3.8.1"
+maven_version="apache-maven-3.8.6"
 filename="${maven_version}-bin.tar.gz"
-download_path="https://mirror.ibcp.fr/pub/apache/maven/maven-3/3.8.1/binaries/${filename}"
-
+download_path="https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/${filename}"
 # Download and unzip package
 wget $download_path
 tar -xvf "${current_dir}/${filename}"
@@ -36,4 +35,4 @@ rm "${current_dir}/${filename}"
 # verify installation
 mvn -version
 
-# Reboot for persisting new environment variables on all terminal
+# Reboot for persisting new environment variables on all terminal and source the env file manually
